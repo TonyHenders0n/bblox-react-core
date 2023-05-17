@@ -60,7 +60,7 @@ export const Drawer: DrawerComponent = ({ children, ...rest }: DrawerProps) => {
     flexShrink: 0,
     whiteSpace: "nowrap",
     ...(state === "open" && {
-      ...openedMixin(theme),
+      ...openedMixin(theme, drawerWidth),
       [`& .${drawerClasses.paper}`]: openedMixin(theme),
     }),
     ...(state !== "open" && {

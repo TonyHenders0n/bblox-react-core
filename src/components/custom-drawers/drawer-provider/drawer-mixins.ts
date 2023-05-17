@@ -1,9 +1,9 @@
 import { Theme, CSSObject } from "@mui/material/styles";
 
-export const defaultDrawerWidth = 240;
+export const defaultDrawerWidth = 260;
 
-export const openedMixin = (theme: Theme, drawerWidth: string | number = defaultDrawerWidth ): CSSObject => ({
-  width: drawerWidth,
+export const openedMixin = (theme: Theme, drawerWidth?: string | number  ): CSSObject => ({
+  width: drawerWidth ? drawerWidth : defaultDrawerWidth,
   transition: theme.transitions.create("width", {
     easing: theme.transitions.easing.sharp,
     duration: theme.transitions.duration.enteringScreen,
