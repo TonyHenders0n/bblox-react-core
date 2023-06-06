@@ -4,7 +4,7 @@ import { DrawerContent } from "./drawer-content";
 import { withMemoryRouter } from "~/storybook";
 import { Drawer, DrawerProvider } from "./drawer-provider";
 import { mockDrawerNavigation } from "./drawer.mock";
-import { ContentPlaceholder } from "../placeholders";
+import { ContentPlaceholder } from "../../placeholders";
 import { DrawerState, DrawerVariant } from "./drawer.types";
 import { DrawerAppBar } from "./drawer-app-bar";
 import { DrawerMain } from "./drawer-main";
